@@ -4,7 +4,7 @@
     <Header/>
     <Cover/>
     <ClaimRow/>
-    <PictureContainer/>
+    <PictureSlot/>
 
     <Footer/>
   </div>
@@ -14,12 +14,18 @@
 
 import Header from './components/layout/header';
 import Footer from './components/layout/footer';
+import Cover from './components/layout/header';
+import ClaimRow from './components/claim-row';
+import PictureSlot from './components/picture-slot';
 
 export default {
   name: 'app',
   components: {
     Header,
     Footer,
+    ClaimRow,
+    Cover,
+    PictureSlot,
   },
 
   data(){
