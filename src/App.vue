@@ -1,37 +1,38 @@
 <template>
   <div id="app">
 
-    <Header/>
-    <Cover/>
-    <ClaimRow/>
-    <PictureSlot/>
+    <Header :config-site="configSite"/>
 
-    <Footer/>
+
+    <Footer :config-site="configSite" />
+
   </div>
 </template>
 
 <script>
 
-import Header from './components/layout/header';
-import Footer from './components/layout/footer';
-import Cover from './components/layout/header';
+//config site
+import { configSite } from './config.site';
+
+import { Header, Footer } from './components/layout/';
+/*import Cover from './components/layout/header';
 import ClaimRow from './components/claim-row';
-import PictureSlot from './components/picture-slot';
+import PictureSlot from './components/picture-slot';*/
 
 export default {
   name: 'app',
   components: {
     Header,
     Footer,
-    ClaimRow,
-    Cover,
-    PictureSlot,
+    //ClaimRow,
+    //Cover,
+    //PictureSlot,
   },
 
   data(){
     return {
 
-      pippo: 'ciao'
+      configSite: configSite,
 
     };
   },
@@ -41,12 +42,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
