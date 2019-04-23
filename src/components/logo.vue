@@ -2,7 +2,7 @@
     <h1 class="[ logo ] [ grid__col grid__col--w50 ]">
       <a :href="configSiteLogo.href">
         <img
-            :src="configSiteLogo.src"
+            src="../assets/logoBianco.svg"
             :alt="configSiteLogo.alt"
             :title="configSiteLogo.title"
         />
@@ -11,6 +11,7 @@
 </template>
 
 <script>
+
   export default {
 
     name: 'Logo',
@@ -26,8 +27,3 @@
 
   }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>

@@ -1,9 +1,11 @@
 
+
+
 export const configSite  = {
 
     logo: {
 
-        src:'./logoBianco.svg',
+        src:'./assets/logoBianco.svg',
         href:'http://www.nor-design.com',
         alt:'www.nor-design.com',
         title:'www.nor-design.com',
