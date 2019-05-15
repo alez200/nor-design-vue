@@ -1,4 +1,6 @@
-# hello-world
+# Vue Nor Design site Refactor
+
+This project is a refactor of a php site in vue spa
 
 ## Project setup
 ```
@@ -24,6 +26,3 @@ npm run test
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
