@@ -1,59 +1,31 @@
 <template>
   <div id="app">
 
-    <Header :config-site="configSite">
-    
-
-    <Footer :config-site="configSite">
+    <Header :config-site="configSite"></Header>
 
   </div>
 </template>
 
 <script>
 
-//config site
 import { configSite } from './config.site';
-
-
-import { Header, Footer } from './components/layout/';
-/*import Cover from './components/layout/header';
-import ClaimRow from './components/claim-row';
-import PictureSlot from './components/picture-slot';*/
-
-
+import {
+  Header,
+} from './Components/Layout/';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     Header,
-    Footer,
-    //ClaimRow,
-    //Cover,
-    //PictureSlot,
   },
 
   data(){
     return {
 
       configSite: configSite,
-      
-      configNotification :{
-      
-      }
 
     };
   },
-  methods:{
-    
-    openNotification: function() {
-      
-      return this.$toasted.show( 'hello billo' )
-    
-    },
-    
-  }
-  
-
 
 }
 </script>

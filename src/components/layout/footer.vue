@@ -48,7 +48,7 @@
 
 <script>
 
-  import Logo from '../logo'
+  import Logo from '../Logo'
 
   export default {
     name: 'Footer',

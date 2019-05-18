@@ -1,10 +1,10 @@
-<template>
-    <h1 class="[ logo ] [ grid__col grid__col--w50 ]">
-      <a :href="configSiteLogo.href">
+<template functional>
+    <h1 :class="props.classLogo" >
+      <a :href="props.href">
         <img
-            src="../assets/logoBianco.svg"
-            :alt="configSiteLogo.alt"
-            :title="configSiteLogo.title"
+            :src="props.src"
+            :alt="props.alt"
+            :title="props.title"
         />
       </a>
     </h1>
@@ -15,13 +15,42 @@
   export default {
 
     name: 'Logo',
-
     props:{
 
-      configSiteLogo:{
-        required: true,
-        type: Object,
-      }
+        src:{
+            type: String,
+            required: true,
+            default:'',
+        },
+
+        href:{
+            type: String,
+            required: true,
+            default:'',
+        },
+        alt: {
+            type: String,
+            required: true,
+            default:'',
+
+        },
+
+        title: {
+            type: String,
+            required: true,
+            default:'',
+        },
+
+        classLogo:{
+            type: String,
+            required: false,
+        },
+
+        el: {
+            type: String,
+            required: true,
+            default: 'div',
+        }
 
     },
 

@@ -2,7 +2,15 @@
   <header class="[ header  header--hidden ] [ grid__row ]">
     <div class="grid__container">
 
-      <Logo :config-site-logo="configSite.logo"/>
+      <Logo
+        :src="configSite.logo.src"
+        :href="configSite.logo.href"
+        :title="configSite.logo.title"
+        :alt="configSite.logo.alt"
+        el="h1"
+        class-logo="[ logo ] [ grid__col grid__col--w50 ]"
+
+      />
 
       <nav class="[ menu ] [ grid__col grid__col--w50 ]">
         <ul class="[ menu__item ]">
@@ -17,7 +25,7 @@
 
 <script>
 
-  import Logo from '../logo'
+  import Logo from '../Logo'
 
   export default {
     name: 'Header',

@@ -2,7 +2,7 @@
     <h1 class="[ logo ] [ grid__col grid__col--w50 ]">
       <a :href="configSiteLogo.href">
         <img
-            src="../assets/logoBianco.svg"
+            src="../Assets/logoBianco.svg"
             :alt="configSiteLogo.alt"
             :title="configSiteLogo.title"
         />
@@ -19,8 +19,10 @@
     props:{
 
       configSiteLogo:{
+
         required: true,
         type: Object,
+
       }
 
     },
