@@ -1,29 +1,43 @@
-<template>
-    <h1 class="[ logo ] [ grid__col grid__col--w50 ]">
-      <a :href="configSiteLogo.href">
-        <img
-            src="../Assets/logoBianco.svg"
-            :alt="configSiteLogo.alt"
-            :title="configSiteLogo.title"
-        />
-      </a>
-    </h1>
+<template functional>
+    <div :class="props.classInfo">
+
+        <ul v-for="( item, index ) in props.items" :key="index">
+            <li>
+                <a :href="item.href"
+                   :title="item.title">
+                    {{item.label}}
+                </a>
+            </li>
+        </ul>
+
+    </div>
 </template>
 
 <script>
 
   export default {
 
-    name: 'Logo',
+    name: 'Info',
 
     props:{
 
-      configSiteLogo:{
+        items:{
+            type: Object,
+            required: true,
+            default:() => ({
+            }),
+        },
 
-        required: true,
-        type: Object,
+        classInfo:{
+            type: String,
+            required: false,
+        },
 
-      }
+        el: {
+            type: String,
+            required: true,
+            default: 'div',
+        }
 
     },
 

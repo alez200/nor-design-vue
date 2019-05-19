@@ -2,6 +2,7 @@
   <div id="app">
 
     <Header :config-site="configSite"></Header>
+    <Footer :config-site="configSite"></Footer>
 
   </div>
 </template>
@@ -10,13 +11,15 @@
 
 import { configSite } from './config.site';
 import {
-  Header,
+    Header,
+    Footer
 } from './Components/Layout/';
 
 export default {
   name: 'App',
   components: {
     Header,
+    Footer,
   },
 
   data(){
