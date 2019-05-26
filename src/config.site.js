@@ -30,6 +30,12 @@ export const configSite  = {
         },
     },
 
+    credits:[
+        '© 2019 New or Review design',
+        'Fotografie di <a href="https://it.linkedin.com/in/filippo-capodaglio-28892a8b" target="_blank">Filippo Capodaglio</a>.'
+    ],
+
+
     titleSite:'New or Review design',
 
 };

@@ -20,6 +20,10 @@
           class-info="[ contatti ]"
         />
 
+        <Credits
+          :items="configSite.credits"
+        />
+
       </div>
 
       <!--
@@ -52,8 +56,9 @@
 
 <script>
 
-  import Logo from '../Logo'
-  import Info from '../Info'
+  import Logo from '../Logo';
+  import Info from '../Info';
+  import Credits from '../Credits';
 
   export default {
     name: 'Footer',
@@ -61,7 +66,8 @@
     components: {
 
       Logo,
-      Info
+      Info,
+      Credits,
 
     },
 

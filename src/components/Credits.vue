@@ -1,19 +1,23 @@
-<template>
-
-    <div class="[ contatti ]">
-
-        <ul>
-            <li><a href="http://www.nor-design.com" title="www.nor-design.com">{{configSite.titleSite}}</a></li>
-            <li><a href="mailto:info@nor-design.com" title="send mail to info@nor-design.com ">{{configSite.mailSite}}</a></li>
-            <li><a href="tel:+39 3337931450" title="call me to +39 3337931450">{{configSite.phone}}</a></li>
-        </ul>
-
+<template functional>
+    <div>
+        <div  v-for="( item, index ) in props.items" :key="index" class="[ seo ] [ grid__col  grid__col--l50 ] ">
+            <p v-html="item" class="[ seo__copy ]">{{item}}</p>
+        </div>
     </div>
-
 </template>
 
 <script>
 	export default {
-		name: "Credits"
-	}
+        name: "Credits",
+
+        props: {
+
+            items: {
+                type: Array,
+                required: true,
+                default: () => ([]),
+            },
+
+        },
+    }
 </script>

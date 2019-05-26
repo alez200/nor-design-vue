@@ -2,6 +2,12 @@
   <div id="app">
 
     <Header :config-site="configSite"></Header>
+
+    <router-link to="/linea">Vai a linea</router-link>
+    <router-link to="/collezione">Vai a collezione</router-link>
+
+    <router-view></router-view>
+
     <Footer :config-site="configSite"></Footer>
 
   </div>

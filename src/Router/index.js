@@ -1,8 +1,9 @@
-import Vue from 'vue';
+
 import Router from 'vue-router';
 import HomePage from '../Pages/HomePage';
+import Collection from '../Pages/Collection';
+import Line from '../Pages/Line';
 
-Vue.use(Router)
 
 export default new Router({
     routes: [
@@ -10,6 +11,16 @@ export default new Router({
             path: '/',
             name: 'HomePage',
             component: HomePage
+        },
+        {
+            path: '/collezione',
+            name: 'Collection',
+            component: Collection
+        },
+        {
+            path: '/linea',
+            name: 'Line',
+            component: Line
         }
     ]
 })
